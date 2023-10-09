@@ -1,410 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-  <title>GDSC GHRCEM</title>
-  <link rel="icon" href="./assets/gdsc.png" type="image/x-icon" />
+    <!-- Primary Meta Tags -->
+    <title>GDSC GHRCEM GCSJ Leaderboard</title>
+    <meta name="title" content="GDSC GHRCEM GCSJ Leaderboard">
+    <meta name="description"
+        content="
+         This GitHub Organization represents GDSC-GHRCEM, an official community group at the university level dedicated to students who have an interest in Google developer technologies. We welcome students from various undergraduate and postgraduate programs who are keen on advancing their skills as developers. Being part of GDSC offers students the opportunity to expand their knowledge in a peer-to-peer learning environment and collaborate on developing solutions.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gdscghrcem.github.io">
+    <meta property="og:title" content="GDSC GHRCEM GCSJ Leaderboard">
+    <meta property="og:description"
+        content="
+         This GitHub Organization represents GDSC-GHRCEM, an official community group at the university level dedicated to students who have an interest in Google developer technologies. We welcome students from various undergraduate and postgraduate programs who are keen on advancing their skills as developers. Being part of GDSC offers students the opportunity to expand their knowledge in a peer-to-peer learning environment and collaborate on developing solutions.">
+    <meta property="og:image" content="{% static 'image/gdsc-ghrcem-banner.png' %}">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gdscghrcem.github.io">
+    <meta property="twitter:title" content="GDSC GHRCEM GCSJ Leaderboard">
+    <meta property="twitter:description"
+        content="
+        This GitHub Organization represents GDSC-GHRCEM, an official community group at the university level dedicated to students who have an interest in Google developer technologies. We welcome students from various undergraduate and postgraduate programs who are keen on advancing their skills as developers. Being part of GDSC offers students the opportunity to expand their knowledge in a peer-to-peer learning environment and collaborate on developing solutions. ">
+    <meta property="twitter:image" content="{% static 'image/gdsc-ghrcem-banner.png' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/gdscfavi.png">
 </head>
 
 <body>
-  <nav class="header">
-    <img src="./assets/logo.png" alt="" srcset="" class="logo" />
-    <p class="attend">We Attended Git + Github 2.0</p>
-  </nav>
-  <div class="container flex-column">
-    <div id="gallery" class="d-flex flex-wrap row">
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="./assets/sherlock_holmes.jpeg" alt="[Sherlock Holmes]" width="100%" height="100%">
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Sherlock Holmes</h2>
-              <p class="card-text">
-                A consulting detective who is a genius at solving mysteries and is known for his eccentric personality.
-                The character is known for his proficiency with observation, deduction, forensic science, and logical
-                reasoning.
-              </p>
-              <p class="card-text">
-                This fictional character was created by Sir Arthur Conan Doyle.
-
-              </p>
-              <hr>
-              <p class="card-text">Contributed by - GDSC</p>
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="https://gdsc.community.dev/g-h-raisoni-college-of-engineering-and-management-pune/">
+                <img src="/assets/gdsc-ghrcem-logo.png" alt="" class="d-inline-block align-text-top">
+            </a>
         </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://dragonball.guru/wp-content/uploads/2021/01/goku-dragon-ball-guru.jpg"
-              alt="Goku Image Here" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Goku</h2>
-              <p class="card-text">
-                From Dragon ball Z
-              </p>
-              <p class="card-text">
-                Goku is introduced as an eccentric, monkey-tailed boy who practices martial arts and possesses
-                superhuman strength.
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - M Juned </p>
+    </nav>
+    <div class="container" style="padding-top: 0px; padding-bottom: 40px; padding-left: 20px; margin-top: 150px;">
+        <div class="gccp_data text-center my-5">
+            <h4 style="font: weight 450;"><img src="/assets/cloudLg.png" alt="adypu_logo" class="adypulg"><span>Google
+                </span>Cloud <b><span class="study">STUDY </span><span class="jams">JAMS </span><span
+                        class="num23">23</span><span class="sym-"> - </span><span class="num24">24</span></b></h4>
+            <div class="custom-menu__right w-75 mx-auto ">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <input id="input" class="p-2 w-100 " type="text" id="gccp_search">
             </div>
-          </div>
         </div>
-      </div>
-
-      <!--Sample [Character Name] card end-->
-
-      <!--Add your card below this line -->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlvqyjN1buHGzNmuS53LriYrl-0ICOZSJVBQg3phY0ldJljRguxGyKiyL6dUOX9Tl3zA&usqp=CAU"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Saitama</h2>
-              <p class="card-text">
-                Saitama is a fictional superhero and the protagonist of One's manga series One-Punch Man. Saitama, an
-                unassociated hero, hails from Z-City and performs heroic deeds as a hobby. For three years, he has
-                trained enough to defeat any enemy with a single punch, his unmatched strength leaving him bored
-              </p>
-              <p class="card-text">
-                The most boring and powerful character
-              </p>
-              <hr />
-              <p class="card-text">Contributed by -Navjeevan & Neeraj</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--Add your card below this line -->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://ik.imagekit.io/j83rchiauw/tring/202302111148_qbWQ1287LpGNwHRA.png" alt="Chotta bheem"
-              height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Chotta bheem</h2>
-              <p class="card-text">
-                Your Character Info 1 Bheem is courageous, bold, intelligent and wise.
-                he can alwaysd take risk for saving his friends in any situation.
-              </p>
-              <p class="card-text">
-                Your Character Info 2 he is very kind.When you are intelligent and wise, you will know what is right and
-                what is wrong.
-                Bheem is physically strong and so he is free from fear.
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Amar Jogdand</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Professor] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://hearthfeelings.com/wp-content/uploads/2021/12/money-heist-professor-1200.jpg"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Professor</h2>
-              <p class="card-text">
-                The Professor, real name Sergio, mostly grew up in hospitals due to being a sick child.
-              </p>
-              <p class="card-text">
-                He leads the gang, and is the one who carefully plans and organises the heist in the Royal Mint and the
-                Bank of Spain. He is sophisticated but nerdy.
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - KRUSHNA VINODRAO THAKARE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img
-              src="https://www.slashfilm.com/img/gallery/one-piece-film-red-showcases-luffys-new-transformation-for-the-first-time/intro-1667316814.jpg"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Monkey D Luffy</h2>
-              <p class="card-text">
-                Son of Monkey D Dragon
-                He is the Sun god, A methical god
-              </p>
-              <p class="card-text">
-                Just An Amazing character from a boring Anime
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Sanket</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://i.ytimg.com/vi/tz7kGg8gYCg/maxresdefault.jpg" alt="Nobita" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Nobita</h2>
-              <p class="card-text">
-                Nobita is the main protagonist in the Doraemon cartoon series, known for his clumsiness and laziness.
-              </p>
-              <p class="card-text">
-                He often relies on Doraemon's futuristic gadgets to solve his problems and is characterized by his
-                kind-hearted nature.
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Pravin Paithankar</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Thomas shelby] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img
-              src="https://hips.hearstapps.com/hmg-prod/images/tommy-shelby-cillian-murphy-peaky-blinders-1569234705.jpg?crop=0.552xw:0.368xh;0.378xw,0.0295xh&resize=1200:*"
-              alt="Thomas Shelby" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Thomas Shelby</h2>
-              <p class="card-text">
-                More ambitious, daring and above all more thoughtful and disciplined
-              </p>
-              <p class="card-text">
-                he unquestionably stands out as the leader of the Shelby clan. Both tortured and ruthless, he only wants
-                more justice for his family.
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Utkarsh Shelke</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img
-              src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-63228,msid-93373205/is-electronic-arts-developing-iron-man-single-player-game-all-you-need-to-know.jpg"
-              alt="Iron Man" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">IRON MAN</h2>
-              <p class="card-text">
-                A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
-                Edward "Tony" Stark suffers a severe chest injury during a kidnapping.
-              </p>
-              <p class="card-text">
-                When his captors attempt to force him to build a weapon of mass destruction, he instead creates a
-                mechanized suit of armor to save his life and escape captivity
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Vrashank Domatwar</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--Add your card below this line -->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://lumiere-a.akamaihd.net/v1/images/p_doctorstrange_19918_516f94d3.jpeg"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Doctor Strange</h2>
-              <p class="card-text">
-                Doctor Strange serves as Sorcerer Supreme, the primary protector of Earth against magical and mystical
-                threats. Strange was introduced during the Silver Age of Comic Books in an attempt to bring a different
-                kind of character and themes of mysticism to Marvel Comics
-              </p>
-              <p class="card-text">
-                In an accident, Stephen Strange, a famous neurosurgeon, loses the ability to use his hands. He goes to
-                visit the mysterious Ancient One to heal himself and becomes a great sorcerer under her tutelage.
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Sumeet Gupta</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://insomniac.games/wp-content/uploads/2018/09/Spider-Man_PS4_Selfie_Photo_Mode_LEGAL.jpg"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Spider-Man</h2>
-              <p class="card-text">
-                Coolest Marvel SuperHero
-              </p>
-              <p class="card-text">
-
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Atharva Thakare</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc2to8RNuwYvGKdweonWogF_SHeX5j5oWR5w&usqp=CAU"
-              alt="Ironman" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Tanjiro</h2>
-              <p class="card-text">
-                Tanjiro Kamado (Japanese: 竈門 炭治郎, Hepburn: Kamado Tanjirō) is a fictional character and the protagonist
-                of Koyoharu Gotouge's manga Demon Slayer: Kimetsu no Yaiba. </p>
-              <p class="card-text">
-                Tanjiro goes on a quest to restore the humanity of his sister, Nezuko, who was turned into a demon after
-                his family was killed
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - Yash Darode
-
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-
-      <!--card start-->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img src="https://i.pinimg.com/originals/0f/62/05/0f62058ee89389e00e7c6b0af5f7d984.jpg"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">Roronoa Zero</h2>
-              <p class="card-text">
-                Roronoa Zoro, also known as "Pirate Hunter" Zoro, is a fictional character in the One Piece franchise
-                created by Eiichiro Oda. In the story, Zoro is the first crewmate to join Monkey D. Luffy's crew after
-                he is saved from being executed at the Marine Base by Captain Morgan. Wikipedia
-              </p>
-              <p class="card-text">
-                Voiced by: Kazuya Nakai (Toei Animation), Christopher Sabat (Crunchyroll), more
-                Devil fruit: Shusui
-                Haki power: Busoshoku Haki, Kenbunshoku Haki, Nigh- invulnerability, Superhuman strength, more
-                Last known bounty (in Belly): 1,111,000,000
-                Date of birth: November 11
-                Nickname: Pirate Hunter Zoro
-                First anime appearance: I'm Gonna Be King of the Pirates!
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - SUSHANT MAMIDWAR</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Sample [Character Name] card end-->
-      <!--Add your card below this line -->
-      <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-        <div class="row no-gutters">
-          <div class="col-md-4 p-0 ">
-            <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
-            <img
-              src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/5359769168001/bc425ba4-a6e2-49e6-97ca-02fcbf3af727/bc964855-5ada-4888-9a91-017127da6737/1280x720/match/image.jpg"
-              alt="[Your Character Name]" height="100%" width="100%" />
-          </div>
-          <div class="col-md-8 card-custom">
-            <div class="card-body">
-              <h2 class="card-title">IRON MAN</h2>
-              <p class="card-text">
-                “With great power comes great responsibility.”
-
-              </p>
-              <p class="card-text">
-
-              </p>
-              <hr />
-              <p class="card-text">Contributed by - SAKSHI WARE</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <table class="table table-hover fa-border">
+            <thead>
+                <tr>
+                    <th scope="col"><b>Sr. No.</b></th>
+                    <th scope="col"><b>Name</b></th>
+                    <th scope="col"><b>Redemption Status</b></th>
+                    <th scope="col"><b>Course Completed</b></th>
+                    <th scope="col"><b>Skill Badges Completed</b></th>
+                    <th scope="col"><b>GenAI Completed</b></th>
+                    <th scope="col"><b>Total Completion</b></th>
+                </tr>
+            </thead>
+            <tbody id="gccp_body">
+            </tbody>
+        </table>
+        <script>
+            function compare(a, b) {
+                if (a["# of Courses Completed"] > b["# of Courses Completed"]) {
+                    return -1;
+                } else if (a["# of Courses Completed"] < b["# of Courses Completed"]) {
+                    return 1;
+                } else {
+                    // If the number of courses completed is the same, compare by skill badges completed
+                    if (a["# of Skill Badges Completed"] > b["# of Skill Badges Completed"]) {
+                        return -1;
+                    } else if (a["# of Skill Badges Completed"] < b["# of Skill Badges Completed"]) {
+                        return 1;
+                    } else {
+                        // If skill badges completed are also the same, compare by "# of GenAI Game Completed"
+                        if (a["# of GenAI Game Completed"] > b["# of GenAI Game Completed"]) {
+                            return -1;
+                        } else if (a["# of GenAI Game Completed"] < b["# of GenAI Game Completed"]) {
+                            return 1;
+                        } else {
+                            // If GenAI games completed are also the same, compare by "Total completion" value
+                            if (a["Total completion"] === "Yes" && b["Total completion"] === "No") {
+                                return -1;
+                            } else if (a["Total completion"] === "No" && b["Total completion"] === "Yes") {
+                                return 1;
+                            } else {
+                                return 0;
+                            }
+                        }
+                    }
+                }
+            }
+            const updateData = async (filter) => {
+                let data = await (await fetch('./data.json')).json();
+                let total_started = 0
+                if (filter !== "") {
+                    data = data.filter((el) => {
+                        return el["Student Name"].toLowerCase().includes(filter.toLowerCase());
+                    })
+                }
+                data.sort(compare);
+                let total_reg = data.length;
+                let html = "";
+                data.forEach((d, i) => {
+                    total_started += d["Redemption Status"] === "Yes" ? 1 : 0;
+                    html += `
+                       <tr>
+                         <th>${i + 1}</th>
+                         <td><a href="${d["Google Cloud Skills Boost Profile URL"]}" target="_blank" style="color:#000000;">${d["Student Name"]}</a></td>
+                         <td>${d["Redemption Status"] === "Yes" ? "✅" : "⚠️"}</td>
+                         <td>${d["# of Courses Completed"]}</td>
+                         <td>${d["# of Skill Badges Completed"]}</td>
+                         <td>${d["# of GenAI Game Completed"]}</td>
+                         <td>${d["Total Completions of both Pathways"]}</td>
+                    </tr>
+                       `
+                })
+                document.getElementById("gccp_body").innerHTML = html;
+            }
+            updateData("");
+            const input = document.getElementById('input');
+            input.addEventListener('input', () => {
+                console.log(input.value);
+                updateData(input.value)
+            })
+        </script>
     </div>
+    </header>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <div class="container pt-2">
+            <section class="mb-4">
+                <a href="https://www.instagram.com/gdsc_ghrcem/" target="_blank" class="btn btn-lg text-dark m-1"
+                    href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.gg/VZfpTBYe5h" target="_blank" class="btn btn-lg text-dark m-1" href="#!"
+                    role="button"><i class="fab fa-discord"></i></a>
+                <a href="https://x.com/gdsc_ghrcem" target="_blank" class="btn btn-lg text-dark m-1" href="#!"
+                    role="button"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/gdsc-ghrcem/" target="_blank" class="btn btn-lg text-dark m-1"
+                    href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/gdscghrcem/" target="_blank" class="btn btn-lg text-dark m-1" href="#!"
+                    role="button"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="text-dark" href="https://github.com/gdscghrcem/" target="_blank">&copy; GDSC-GHRCEM Team</a>
+        </div>
+    </footer>
 </body>
 
 </html>
